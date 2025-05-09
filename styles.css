@@ -219,3 +219,34 @@ pre {
 .footer-3 a:hover {
     text-decoration: underline;
 }
+
+.faq-section {
+    background-color: white;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+}
+
+.faq-section h2 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.faq {
+    margin-bottom: 1.5rem;
+}
+
+.faq h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.faq p {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+}
