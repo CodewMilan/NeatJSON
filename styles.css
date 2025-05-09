@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #2563eb;
+    --primary-color: #44d9c2;
     --primary-hover: #1d4ed8;
     --secondary-color: #64748b;
     --secondary-hover: #475569;
-    --background-color: #f8fafc;
+    --background-color: #cae38f;
     --text-color: #1e293b;
     --border-color: #e2e8f0;
     --error-color: #ef4444;
@@ -35,7 +35,7 @@ header {
     text-align: center;
     margin-bottom: 3rem;
     padding: 2rem;
-    background: white;
+    background: rgb(233, 176, 185);
     border-radius: 1rem;
     box-shadow: var(--card-shadow);
 }
@@ -211,3 +211,29 @@ footer p {
     transform: translateY(-2px);
     background-color: rgba(37, 99, 235, 0.1);
 } 
+
+#main
+{
+    height: 100px;
+    width: 900px;
+    background-color: rgb(233, 176, 185);
+    margin: auto;
+    border: 2px solid wheat;
+    border-radius: 20px 20px 0px 0px;
+    --transition: all 0.2s ease-in-out;
+}
+
+#try
+{
+    font-family:  'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    background-color: #69d092;
+    transition: all 0.2s ease-in-out;
+    font-size: 40px;
+}
+nav,div
+{
+    width: 900px;
+    height: 60px;
+    background-color: #cae38f;
+}
