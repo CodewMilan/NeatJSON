@@ -1,20 +1,20 @@
 :root {
-    --primary-color: #2563eb;
-    --primary-hover: #1d4ed8;
-    --secondary-color: #64748b;
-    --secondary-hover: #475569;
-    --background-color: #f8fafc;
-    --text-color: #1e293b;
-    --border-color: #e2e8f0;
+    --primary-color: #1232be;
+    --primary-hover: #dbe0ec;
+    --secondary-color: #387cdc;
+    --secondary-hover: #4975b1;
+    --background-color: #0f1010;
+    --text-color: #eaeef3;
+    --border-color: #0a0a0a;
     --error-color: #ef4444;
-    --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --card-shadow: 0 4px 6px -1px rgb(0 0 1 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --transition: all 0.2s ease-in-out;
 }
 
 * {
-    margin: 0;
+    margin: 02;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 body {
@@ -35,7 +35,7 @@ header {
     text-align: center;
     margin-bottom: 3rem;
     padding: 2rem;
-    background: white;
+    background: rgb(24, 23, 23);
     border-radius: 1rem;
     box-shadow: var(--card-shadow);
 }
@@ -66,7 +66,7 @@ main {
 }
 
 .input-section, .output-section {
-    background: white;
+    background: rgb(20, 19, 19);
     padding: 1.5rem;
     border-radius: 1rem;
     box-shadow: var(--card-shadow);
@@ -101,12 +101,12 @@ h2 {
     transition: var(--transition);
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.15rem;
 }
 
 .btn.primary {
     background-color: var(--primary-color);
-    color: white;
+    color: rgb(16, 15, 15);
 }
 
 .btn.primary:hover {
@@ -116,7 +116,7 @@ h2 {
 
 .btn.secondary {
     background-color: var(--secondary-color);
-    color: white;
+    color: rgb(34, 31, 31);
 }
 
 .btn.secondary:hover {
@@ -130,7 +130,7 @@ textarea, pre {
     padding: 1.25rem;
     border: 1px solid var(--border-color);
     border-radius: 0.75rem;
-    background-color: white;
+    background-color: rgb(27, 26, 26);
     font-family: 'Consolas', 'Monaco', monospace;
     font-size: 0.875rem;
     line-height: 1.6;
@@ -148,14 +148,14 @@ pre {
     overflow: auto;
     white-space: pre-wrap;
     word-wrap: break-word;
-    background-color: #f8fafc;
+    background-color: #161719;
 }
 
 .error-message {
     margin-top: 1rem;
     padding: 1rem 1.5rem;
     border-radius: 0.75rem;
-    background-color: #fee2e2;
+    background-color: #141212;
     color: var(--error-color);
     display: none;
     font-weight: 500;
@@ -172,7 +172,7 @@ pre {
         opacity: 1;
     }
 }
-
+box
 .error-message.show {
     display: block;
 }
@@ -180,7 +180,7 @@ pre {
 footer {
     margin-top: 3rem;
     padding: 2rem;
-    background: white;
+    background: rgb(20, 18, 18);
     border-radius: 1rem;
     box-shadow: var(--card-shadow);
     text-align: center;
