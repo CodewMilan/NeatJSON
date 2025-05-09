@@ -1,14 +1,33 @@
 :root {
+    /* Light theme variables */
     --primary-color: #2563eb;
     --primary-hover: #1d4ed8;
     --secondary-color: #64748b;
     --secondary-hover: #475569;
-    --background-color: #f8fafc;
+    --background-color: #d979f7;
     --text-color: #1e293b;
-    --border-color: #e2e8f0;
+    --border-color: #eb4bfa;
     --error-color: #f16d6d;
     --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --transition: all 0.2s ease-in-out;
+    --card-bg: white;
+    --input-bg: white;
+    --pre-bg: #f8fafc;
+}
+
+[data-theme="dark"] {
+    --primary-color: #3b82f6;
+    --primary-hover: #60a5fa;
+    --secondary-color: #94a3b8;
+    --secondary-hover: #cbd5e1;
+    --background-color: #0f172a;
+    --text-color: #e2e8f0;
+    --border-color: #334155;
+    --error-color: #f87171;
+    --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+    --card-bg: #1e293b;
+    --input-bg: #1e293b;
+    --pre-bg: #0f172a;
 }
 
 * {
@@ -66,7 +85,7 @@ main {
 }
 
 .input-section, .output-section {
-    background: white;
+    background: var(--card-bg);
     padding: 1.5rem;
     border-radius: 1rem;
     box-shadow: var(--card-shadow);
@@ -130,7 +149,8 @@ textarea, pre {
     padding: 1.25rem;
     border: 1px solid var(--border-color);
     border-radius: 0.75rem;
-    background-color: white;
+    background-color: var(--input-bg);
+    color: var(--text-color);
     font-family: 'Consolas', 'Monaco', monospace;
     font-size: 0.875rem;
     line-height: 1.6;
@@ -148,7 +168,7 @@ pre {
     overflow: auto;
     white-space: pre-wrap;
     word-wrap: break-word;
-    background-color: #f8fafc;
+    background-color: var(--pre-bg);
 }
 
 .error-message {
@@ -180,7 +200,7 @@ pre {
 footer {
     margin-top: 3rem;
     padding: 2rem;
-    background: white;
+    background: var(--card-bg);
     border-radius: 1rem;
     box-shadow: var(--card-shadow);
     text-align: center;
@@ -215,4 +235,23 @@ footer p {
 .input-section.full-width {
     grid-column: 1 / -1;
     width: 100%;
+}
+
+/* Theme toggle button styles */
+.theme-toggle {
+    margin-top: 1rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.theme-toggle:hover {
+    background-color: var(--secondary-hover);
+}
+
+[data-theme="dark"] .theme-toggle i {
+    transform: rotate(180deg);
+}
+
+[data-theme="dark"] .theme-toggle span {
+    content: "Light Mode";
 } 
