@@ -6,7 +6,7 @@
     --background-color: #f8fafc;
     --text-color: #1e293b;
     --border-color: #e2e8f0;
-    --error-color: #ef4444;
+    --error-color: #f16d6d;
     --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --transition: all 0.2s ease-in-out;
 }
@@ -210,4 +210,9 @@ footer p {
     color: var(--primary-color);
     transform: translateY(-2px);
     background-color: rgba(37, 99, 235, 0.1);
+}
+
+.input-section.full-width {
+    grid-column: 1 / -1;
+    width: 100%;
 } 
