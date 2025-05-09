@@ -5,6 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const copyBtn = document.getElementById('copyBtn');
     const errorDiv = document.getElementById('error');
 
+    const themeContainer = document.getElementById('theme-toggler')
+
+    // Toggle theme
+
+    themeContainer.addEventListener('click', () => {
+        const darkTheme = document.getElementById('dark-mood');
+        const lightTheme = document.getElementById('light-mood');
+
+        if (lightTheme.classList.contains('hide')) {
+            lightTheme.classList.remove('hide')
+            darkTheme.classList.add('hide')
+            document.body.style.backgroundColor = "light"
+        } else {
+            lightTheme.classList.add('hide')
+            darkTheme.classList.remove('hide')
+            document.body.style.backgroundColor = "dark"
+        }
+    })
+
     // Format JSON with proper indentation
     function formatJSON(jsonString) {
         try {
