@@ -28,20 +28,13 @@ Install dependencies (if applicable):
 ```bash
 npm install
 ```
-
-Run locally:
-
-```bash
-npm run dev
-```
-
-Or just open the `index.html` in your browser if it's a pure HTML/CSS/JS project.
+just open the `index.html` in your browser 
 
 ## 🛠️ Technologies Used
 
 - HTML5  
-- CSS3 / Tailwind CSS (optional)  
-- JavaScript (Vanilla or with framework if used)  
+- CSS3 
+- JavaScript 
 
 ## 🧠 How It Works
 
@@ -68,12 +61,6 @@ Contributions are welcome! Feel free to:
 - Create a new branch  
 - Make your changes  
 - Submit a pull request  
-
-Before contributing, please read our [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) (if available).
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## 🙌 Acknowledgements
 
