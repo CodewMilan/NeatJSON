@@ -12,16 +12,24 @@ document.addEventListener('DOMContentLoaded', () => {
     themeContainer.addEventListener('click', () => {
         const darkTheme = document.getElementById('dark-mood');
         const lightTheme = document.getElementById('light-mood');
+        let theme = getComputedStyle(document.body).getPropertyValue("--background-color").trim();
 
-        if (lightTheme.classList.contains('hide')) {
+
+        if (theme == "#f8fafc") {
             lightTheme.classList.remove('hide')
             darkTheme.classList.add('hide')
-            document.body.style.backgroundColor = "light"
+            theme = "#000";
+            document.documentElement.style.setProperty("--shadow-color", "rgb(255 255 255 / 0.1)");
+            document.documentElement.style.setProperty("--text-color", "white");
         } else {
             lightTheme.classList.add('hide')
             darkTheme.classList.remove('hide')
-            document.body.style.backgroundColor = "dark"
+            theme = "#f8fafc";
+            document.documentElement.style.setProperty("--shadow-color", "rgb(0 0 0 / 0.1)");
+            document.documentElement.style.setProperty("--text-color", "#1e293b");
         }
+        document.documentElement.style.setProperty("--background-color", theme);
+        document.documentElement.style.setProperty("--theme", theme);
     })
 
     // Format JSON with proper indentation
