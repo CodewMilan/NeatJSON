@@ -177,20 +177,7 @@ pre {
     display: block;
 }
 
-footer {
-    margin-top: 3rem;
-    padding: 2rem;
-    background: white;
-    border-radius: 1rem;
-    box-shadow: var(--card-shadow);
-    text-align: center;
-    color: var(--secondary-color);
-}
 
-footer p {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-}
 
 .social-links {
     display: flex;
@@ -211,3 +198,24 @@ footer p {
     transform: translateY(-2px);
     background-color: rgba(37, 99, 235, 0.1);
 } 
+
+.footer-3 {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background-color: #e2e8f0;
+    border-radius: 1rem;
+    text-align: center;
+    color: #334155;
+    font-size: 0.95rem;
+    box-shadow: var(--card-shadow);
+}
+
+.footer-3 a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-3 a:hover {
+    text-decoration: underline;
+}
