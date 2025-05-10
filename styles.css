@@ -196,22 +196,6 @@ pre {
 .error-message.show {
     display: block;
 }
-
-footer {
-    margin-top: 3rem;
-    padding: 2rem;
-    background: var(--card-bg);
-    border-radius: 1rem;
-    box-shadow: var(--card-shadow);
-    text-align: center;
-    color: var(--secondary-color);
-}
-
-footer p {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-}
-
 .social-links {
     display: flex;
     justify-content: center;
@@ -230,28 +214,75 @@ footer p {
     color: var(--primary-color);
     transform: translateY(-2px);
     background-color: rgba(37, 99, 235, 0.1);
-}
 
-.input-section.full-width {
-    grid-column: 1 / -1;
-    width: 100%;
-}
-
-/* Theme toggle button styles */
-.theme-toggle {
-    margin-top: 1rem;
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-}
-
-.theme-toggle:hover {
-    background-color: var(--secondary-hover);
-}
-
-[data-theme="dark"] .theme-toggle i {
-    transform: rotate(180deg);
-}
-
-[data-theme="dark"] .theme-toggle span {
-    content: "Light Mode";
 } 
+
+.footer-3 {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background-color: #e2e8f0;
+    border-radius: 1rem;
+    text-align: center;
+    color: #334155;
+    font-size: 0.95rem;
+    box-shadow: var(--card-shadow);
+}
+
+.footer-3 a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-3 a:hover {
+    text-decoration: underline;
+}
+
+.faq-section {
+    background-color: white;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+}
+
+.faq-section h2 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.faq {
+    margin-bottom: 1.5rem;
+}
+
+.faq h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.faq p {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row-reverse;
+    list-style-type: none;
+    background-color: var(--primary-color);
+}
+
+.nav-bar li {
+    display: inline-block;
+    width: 10%;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+}
+
