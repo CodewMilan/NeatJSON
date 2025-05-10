@@ -250,3 +250,20 @@ pre {
     color: var(--secondary-color);
     font-size: 0.95rem;
 }
+
+.nav-bar{
+    display: flex;
+    flex-direction: row-reverse;
+    list-style-type: none;
+    background-color: var(--primary-color);
+}
+
+.nav-bar li {
+    display: inline-block;
+    width: 10%;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+}
