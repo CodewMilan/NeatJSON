@@ -1,14 +1,33 @@
 :root {
+    /* Light theme variables */
     --primary-color: #2563eb;
     --primary-hover: #1d4ed8;
     --secondary-color: #64748b;
     --secondary-hover: #475569;
-    --background-color: #f8fafc;
+    --background-color: #d979f7;
     --text-color: #1e293b;
-    --border-color: #e2e8f0;
-    --error-color: #ef4444;
+    --border-color: #eb4bfa;
+    --error-color: #f16d6d;
     --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --transition: all 0.2s ease-in-out;
+    --card-bg: white;
+    --input-bg: white;
+    --pre-bg: #f8fafc;
+}
+
+[data-theme="dark"] {
+    --primary-color: #3b82f6;
+    --primary-hover: #60a5fa;
+    --secondary-color: #94a3b8;
+    --secondary-hover: #cbd5e1;
+    --background-color: #0f172a;
+    --text-color: #e2e8f0;
+    --border-color: #334155;
+    --error-color: #f87171;
+    --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+    --card-bg: #1e293b;
+    --input-bg: #1e293b;
+    --pre-bg: #0f172a;
 }
 
 * {
@@ -66,7 +85,7 @@ main {
 }
 
 .input-section, .output-section {
-    background: white;
+    background: var(--card-bg);
     padding: 1.5rem;
     border-radius: 1rem;
     box-shadow: var(--card-shadow);
@@ -130,7 +149,8 @@ textarea, pre {
     padding: 1.25rem;
     border: 1px solid var(--border-color);
     border-radius: 0.75rem;
-    background-color: white;
+    background-color: var(--input-bg);
+    color: var(--text-color);
     font-family: 'Consolas', 'Monaco', monospace;
     font-size: 0.875rem;
     line-height: 1.6;
@@ -148,7 +168,7 @@ pre {
     overflow: auto;
     white-space: pre-wrap;
     word-wrap: break-word;
-    background-color: #f8fafc;
+    background-color: var(--pre-bg);
 }
 
 .error-message {
@@ -176,9 +196,6 @@ pre {
 .error-message.show {
     display: block;
 }
-
-
-
 .social-links {
     display: flex;
     justify-content: center;
@@ -197,6 +214,7 @@ pre {
     color: var(--primary-color);
     transform: translateY(-2px);
     background-color: rgba(37, 99, 235, 0.1);
+
 } 
 
 .footer-3 {
@@ -267,3 +285,73 @@ pre {
     text-decoration: none;
     color: white;
 }
+
+[data-theme="dark"] .theme-toggle span {
+    content: "Light Mode";
+} 
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="file"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+form label {
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 0.25rem;
+}
+
+form button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 1rem;
+}
+
+form button[type="submit"]:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+label {
+    font-size:23px;
+    font-weight: 600;
+    padding:6px;
+    
+}
+
+#form_textarea,#notesInput {
+    height: 60px;
+}
+
+
