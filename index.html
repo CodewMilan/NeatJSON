@@ -42,21 +42,40 @@
             </div>
 
 
-            <div class="input-section full-width">
-                <div class="section-header">
-                    <h2><i class="fas fa-keyboard"></i> Notes here</h2>
-                    <button id="formatBtn" class="btn primary">
-                        <i class="fas fa-magic"></i>
-                        Save
-                    </button>
-                </div>
-                <textarea id="notesInput" placeholder="Write your notes here..."></textarea>
-            </div>
+            
         </main>
 
+        <div class="input-section full-width">
+            <div class="section-header">
+                <h2><i class="fas fa-keyboard"></i> Notes here</h2>
+                <button id="formatBtn" class="btn primary">
+                    <i class="fas fa-magic"></i>
+                    Save
+                </button>
+            </div>
+            <textarea id="notesInput" placeholder="Write your notes here..."></textarea>
+        </div>
+        
         <div id="error" class="error-message"></div>
 
         <footer>
+             <h1>Found an issue? Report it here</h1>
+             <form action="post">
+                <label for="full-name">Name</label>
+                <input type="text" name="full-name" placeholder="Your name" required>
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="Your email" required>
+                <br>
+                <label for="file" >Supportive File</label>
+                <input type="file" name="file" required>
+                <br>
+                <label for="message">Message</label>
+             
+                <textarea name="message" placeholder="Your message" id="form_textarea"></textarea>
+                <button type="submit">Send</button>
+             </form>    
+
+            
             <p>Made with <i class="fas fa-heart" style="color: #ef4444;"></i> by Milan</p>
             <div class="social-links">
                 <a href="https://github.com/CodewMilan" target="_blank" rel="noopener noreferrer" title="GitHub">
